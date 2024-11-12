@@ -5,9 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Página Inicial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Cabeçalho -->
+    <header style="background-color: #1c3b70;" class="text-white py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand text-white" href="#">
+            <img src="/static/img/logo2.png" alt="Logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link text-white">Notícias de Hoje</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Formas de Ingresso - Militares de Carreira</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Formas de Ingresso - Militares Temporários</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-4">
+      <h1 class="text-center">Exames de Admissão para Militares de Carreira da Aeronáutica</h1>
+      <p class="text-center">Para realizar a inscrição em qualquer um dos Exames em andamento, que permitam inscrições online, é necessário realizar o <a href="/pages/register.html" class="text-primary">cadastro</a> mediante link disponibilizado na Área do Candidato.</p>
+
+      <!-- Campo de Busca -->
+      <div class="search-bar text-center mb-4">
+        <input type="text" class="form-control" placeholder="Digite seu nome ou CPF">
+      </div>
+
+      <!-- Cards de Exames -->
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="/static/img/example1.jpg" class="card-img-top" alt="Exame 1">
+            <div class="card-body">
+              <p class="card-text">Exame de admissão ao curso de formação de sargento da aeronáutica nível médio</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="/static/img/example1.jpg" class="card-img-top" alt="Exame 2">
+            <div class="card-body">
+              <p class="card-text">Exame de admissão ao curso de formação de sargento da aeronáutica nível fundamental</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="/static/img/example1.jpg" class="card-img-top" alt="Exame 3">
+            <div class="card-body">
+              <p class="card-text">Exame de admissão ao curso de formação de oficial da aeronáutica nível superior</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="/static/img/example1.jpg" class="card-img-top" alt="Exame 4">
+            <div class="card-body">
+              <p class="card-text">Exame de admissão ao curso de formação de oficial da aeronáutica nível médio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botão de Carregar Mais -->
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-primary">Carregar mais <span>&#9660;</span></button>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,79 @@
+/* Estilo global */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #f8f8ff;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+/* Cabeçalho */
+.custom-header {
+    background-color: #1c3b70;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+}
+
+/* Links de navegação */
+.nav-link {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Botão "hamburger" */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+  /* Conteúdo principal */
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Barra de busca */
+  .search-bar input {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  /* Estilo dos cartões */
+  .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Botão de carregar mais */
+  .btn-outline-primary {
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  

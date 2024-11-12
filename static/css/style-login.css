@@ -12,7 +12,7 @@
   }
   
   body {
-    background: linear-gradient(135deg, #003399, #0055cc);
+    background: linear-gradient(135deg, #3A5689, #1C3B74);
     font-family: Arial, sans-serif;
     color: #DEDDDE;
     display: flex;
@@ -70,6 +70,11 @@
     background-color: #005bb5;
   }
   
+  /* Estilo do botão de voltar */
+.btn-rounded {
+  border-radius: 56px;
+}
+
   /* Rodapé */
   footer {
     margin-top: 20px;
