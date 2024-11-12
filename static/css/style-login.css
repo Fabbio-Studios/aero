@@ -1,5 +1,11 @@
 /* Reset básico */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +14,7 @@
   body {
     background: linear-gradient(135deg, #003399, #0055cc);
     font-family: Arial, sans-serif;
-    color: #fff;
+    color: #DEDDDE;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +33,7 @@
   .login-box {
     background-color: #1c3b70;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 56px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
   
@@ -45,20 +51,19 @@
   
   /* Input */
   .form-control {
-    background-color: #274a8b;
+    background-color: #DEDDDE;
     border: none;
-    border-radius: 10px;
+    border-radius: 56px;
     padding: 10px;
-    color: #fff;
+    color: #DEDDDE;
   }
   
   /* Botão */
   .btn-primary {
     background-color: #0073e6;
     border: none;
-    border-radius: 10px;
+    border-radius: 56px;
     padding: 10px;
-    font-weight: bold;
   }
   
   .btn-primary:hover {
