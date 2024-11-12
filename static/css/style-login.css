@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #003399, #0055cc);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container da tela de login */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Caixa de login */
+  .login-box {
+    background-color: #1c3b70;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo */
+  .logo {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  
+  /* Título */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Input */
+  .form-control {
+    background-color: #274a8b;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  /* Botão */
+  .btn-primary {
+    background-color: #0073e6;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 20px;
+  }
+  
+  footer p {
+    font-size: 12px;
+    color: #b0c4de;
+  }
+  
