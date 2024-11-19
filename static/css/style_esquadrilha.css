@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4fc;
+    
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #2e6db5;
+    padding: 20px;
+    color: #fff;
+}
+
+.header .logo img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.header .title h1,
+.header .title h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header .title p {
+    font-size: 0.9em;
+}
+
+/* Menu lateral */
+.sidebar {
+    background-color: #dfe2e8;
+    padding: 20px;
+    width: 200px;
+    height: 80vh;
+    position: fixed;
+    top: 140px; /* Ajuste para alinhar com outros elementos da página */
+    left: 0;
+    border-radius: 20px; /* Arredondado para um estilo moderno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+/* Estilo dos itens */
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2e6db5;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ícones */
+.sidebar li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Deixa os ícones arredondados */
+    background-color: #0078d4; /* Fundo azul para os ícones */
+    padding: 5px;
+}
+
+/* Efeito ao passar o mouse */
+.sidebar li:hover {
+    background-color: #e6f1ff;
+    color: #0056a6;
+}
+/* Conteúdo principal */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Slide de notícias */
+.news-slider {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2e6db5;
+}
+
+.news-content {
+    text-align: center;
+    margin: 0 20px;
+    flex: 1;
+}
+
+.news-content h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.news-content p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.news-content h4 {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Agenda */
+.agenda {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agenda h3 {
+    font-size: 1.5em;
+    color: #2e6db5;
+    margin-bottom: 10px;
+}
+
+.agenda img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2e6db5;
+    color: #fff;
+    margin-top: 20px;
+}
