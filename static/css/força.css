@@ -129,3 +129,11 @@ color: #fff;
 padding: 10px 0;
 margin-top: 20px;
 }
+
+/* Estilo para o item ativo */
+li.active {
+    background-color: #727272; /* Cor de fundo para destacar o item */
+    color: #fff; /* Cor do texto para contraste */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados, opcional */
+}
