@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4fc;
+    
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #2e6db5;
+    padding: 20px;
+    color: #fff;
+}
+
+.header .logo img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.header .title h1,
+.header .title h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header .title p {
+    font-size: 0.9em;
+}
+
+/* Menu lateral */
+.sidebar {
+    background-color: #dfe2e8;
+    padding: 20px;
+    width: 200px;
+    height: 80vh;
+    position: fixed;
+    top: 140px; /* Ajuste para alinhar com outros elementos da página */
+    left: 0;
+    border-radius: 20px; /* Arredondado para um estilo moderno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+/* Estilo dos itens */
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2e6db5;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ícones */
+.sidebar li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Deixa os ícones arredondados */
+    background-color: #0078d4; /* Fundo azul para os ícones */
+    padding: 5px;
+}
+
+/* Efeito ao passar o mouse */
+.sidebar li:hover {
+    background-color: #e6f1ff;
+    color: #0056a6;
+}
+/* Conteúdo principal */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Slide de notícias */
+.news-slider {
+    display: flex; /* Alinha os botões e o conteúdo do slider horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.news-slider .news-content {
+    flex: 1; /* Faz o slider ocupar o espaço restante */
+    max-width: 100%; /* Garante que o slider não ultrapasse o limite da tela */
+}
+
+.news-slider .news-content img {
+    width: 100%; /* A imagem se adapta à largura do contêiner */
+    height: auto; /* Mantém a proporção original */
+    border-radius: 10px; /* Borda arredondada para estilo */
+}
+
+.slider-button {
+    background-color: #005eb8; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.slider-button:hover {
+    background-color: #003f7f; /* Cor ao passar o mouse */
+}
+
+/* Agenda de demonstrações */
+.agenda {
+    margin-top: 20px;
+    text-align: center; /* Centraliza o texto e o banner */
+}
+
+.agenda img {
+    width: 100%; /* Adapta a imagem ao tamanho do contêiner */
+    max-width: 800px; /* Define um limite máximo para o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Estilo opcional */
+}
+
+.agenda h3 {
+    font-size: 1.5em;
+    color: #2e6db5;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2e6db5;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Estilo para o item ativo */
+li.active {
+    background-color: #727272; /* Cor de fundo para destacar o item */
+    color: #fff; /* Cor do texto para contraste */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados, opcional */
+}
