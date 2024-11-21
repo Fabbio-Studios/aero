@@ -155,3 +155,11 @@ body {
   .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
   }
+
+  .nav-link.active {
+    background-color: #043d7a; /* Fundo azul escuro */
+    color: #fff;              /* Texto branco */
+    font-weight: bold;        /* Negrito para destacar */
+    border-radius: 5px;       /* Bordas arredondadas */
+    padding: 5px 10px;        /* Espaçamento interno */
+}
