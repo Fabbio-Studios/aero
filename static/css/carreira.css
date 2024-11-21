@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -94,6 +93,13 @@ body {
     gap: 15px;
 }
 
+/* Hover nos itens */
+.sidebar li:hover {
+    background-color: #e6f1ff;
+    color: #0056a6;
+    transform: translateX(5px);
+}
+
 /* Ícones */
 .sidebar li img {
     width: 45px;
@@ -104,24 +110,25 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Hover nos itens */
-.sidebar li:hover {
-    background-color: #e6f1ff;
-    color: #0056a6;
-    transform: translateX(5px);
-}
+/* Conteúdo principal */
 /* Conteúdo principal */
 .main-content {
-    margin-left: 220px;
+    margin-left: 250px; /* Espaço para compensar a sidebar */
     padding: 20px;
-    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Organizar em coluna */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: flex-start; /* Alinhar ao topo */
+    gap: 20px; /* Espaço entre os elementos */
 }
 
+/* Painel de busca */
 .search-panel {
+    width: 80%; /* Ajusta para ter a mesma largura máxima da tabela */
     background-color: #d1d1d1;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -152,6 +159,12 @@ body {
 }
 
 /* Tabela de contatos */
+.contact-table {
+    width: 100%; /* Ajusta a largura da tabela */
+    max-width: 80%; /* Limita a largura máxima para combinar com o formulário */
+    text-align: center;
+}
+
 .contact-table h3 {
     margin-bottom: 10px;
 }
@@ -160,6 +173,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    margin-top: 10px;
 }
 
 .contact-table th, .contact-table td {
