@@ -5,10 +5,13 @@
 }
 
 
-body {
+html, body {
+    margin: 0;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
     font-family: Arial, sans-serif;
-    background-color: #f0f4fc;
-    
+    height: 100%; /* Garante que o corpo ocupe toda a altura da viewport */
+    display: flex;
+    flex-direction: column; /* Define a direção do layout para coluna */
 }
 
 /* Cabeçalho */
@@ -122,6 +125,7 @@ body {
 .main-content {
     margin-left: 220px;
     padding: 20px;
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
 
 /* Slide de notícias */
@@ -182,7 +186,7 @@ body {
     padding: 10px;
     background-color: #2e6db5;
     color: #fff;
-    margin-top: 20px;
+    margin-top: auto; /* Permite que o footer fique no final do conteúdo */
 }
 
 /* Estilo para o item ativo */
@@ -191,4 +195,11 @@ li.active {
     color: #fff; /* Cor do texto para contraste */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Cantos arredondados, opcional */
+}
+
+/* Estilo do contêiner principal */
+.carousel-center {
+    width: 80%; /* Define a largura desejada para o carrossel */
+    max-width: 1200px; /* Largura máxima opcional */
+    text-align: center; /* Opcional: alinha o texto ou elementos dentro */
 }

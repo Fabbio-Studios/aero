@@ -18,10 +18,13 @@
 }
 
 /* Estilo geral */
-body {
+html, body {
     margin: 0;
     overflow-x: hidden; /* Evita barra de rolagem horizontal */
     font-family: Arial, sans-serif;
+    height: 100%; /* Garante que o corpo ocupe toda a altura da viewport */
+    display: flex;
+    flex-direction: column; /* Define a direção do layout para coluna */
 }
 
 /* Cabeçalho */
@@ -161,7 +164,7 @@ text-align: center;
 background-color: #003f88;
 color: #fff;
 padding: 10px 0;
-margin-top: 20px;
+margin-top: auto; /* Permite que o footer fique no final do conteúdo */
 }
 
 /* Estilo para o item ativo */
