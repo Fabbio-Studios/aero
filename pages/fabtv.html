@@ -16,13 +16,26 @@
         <p>Deseja continuar ou voltar para a página anterior?</p>
         <div class="d-grid gap-2">
           <a href="https://www.youtube.com/@portalfab/videos" target="_blank" class="btn btn-danger">Continuar para o YouTube</a>
-          <a href="../index.html" class="btn btn-secondary">Voltar para o Site</a>
+          <button id="backButton" class="btn btn-secondary">Voltar para o Site</button>
         </div>
       </div>
       <footer>
         <p>© 2024 Ingresso EEAR. Todos os direitos reservados.</p>
       </footer>
     </div>
+
+    <script>
+      document.getElementById('backButton').addEventListener('click', function () {
+        // Verifica se há um referrer válido
+        if (document.referrer) {
+          // Redireciona para a página anterior
+          window.location.href = document.referrer;
+        } else {
+          // Caso contrário, redireciona para a página inicial
+          window.location.href = "../index.html";
+        }
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
